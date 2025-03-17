@@ -62,7 +62,7 @@ function windowResized(){
 }
 
 function sillything(){
-    if(numberOfClicks > 10){
+    if(numberOfClicks > 9){
         tada.play();
     }
 }
