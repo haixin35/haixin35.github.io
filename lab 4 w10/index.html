@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>KITTYYYYYY</title>
+        <style>
+            body {
+                background-color: lightpink;
+            }
+            #kitties {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+                z-index: -1;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <video width="300" autoplay muted loop id="kitties">
+            <source src="kittens.mp4">
+            <source src="kittens.avi">
+            <source src="kittens.ogg">
+        </video>
+        <img src="cat.jpg" width="300" height="300" title="gotta dash" id="dashing">
+        <audio>
+            <source src="meow.mp3">
+        </audio>
+        <script>
+            var kittyimg = document.getElementById('dashing');
+            var kittyvid = document.getElementById('kitties');
+            var meows = document.getElementsByTagName('audio');
+            kittyimg.onclick = function(){
+                meows[0].currentTime = 0;
+                meows[0].volume = 1;
+                meows[0].playbackRate = 1;
+                meows[0].play();
+                if(kittyvid.paused === true){
+                    kittyvid.play();
+                }else{
+                    kittyvid.pause();
+                }
+            }
+        </script>
+    </body>
+</html>
