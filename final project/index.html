@@ -1,0 +1,126 @@
+<!--remixed with https://www.w3schools.com/howto/howto_css_portfolio_gallery.asp -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Final Project◝(ᵔᗜᵔ)◜</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="p5.min.js"></script>
+<style>
+* {
+box-sizing: border-box;
+}
+
+body {
+  background-color: #fff9c0;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-word;
+}
+
+.row {
+  margin: 8px -16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.column {
+  flex: 1 1 calc(100% - 16px);
+}
+
+ .content {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: flex-start;
+} 
+
+.content img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+}
+
+.content-text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    flex: 1 1 100%;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content img,
+  .content-text {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="main">
+
+  <h1>My Portfolio</h1>
+  <hr>
+
+  <h2>Projects</h2>
+  
+  <div class="row">
+    <div class="column">
+      <div class="content">
+        <img src="necklace.jpg" alt="The Roots">
+        <div class="content-text">
+          <h3>The Roots</h3>
+          <p>This adjustable choker-necklace is a piece I created using a Canadian coin and a Hong Kong currency coin. The entire design resembles a flower, with the Canadian coin placed in a smaller blossom on the choker, the most eye-catching part, symbolizing the beauty, richness, and significance my life has gained since coming to Canada. The lower part of the necklace holds the Hong Kong coin, positioned closer to the heart and suspended by root-like elements. These roots stretch toward the Hong Kong coin, representing my deep connection to my heritage, no matter where I live or who I meet. The 20-cent coin, with its natural flower-like shape, serves as a reminder that my roots are not only important but that my life in Hong Kong is just as precious as my life in Canada. Brass wires form the gold-toned accents on the roots, chosen for their resemblance to real gold, a symbol of value and significance.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="content">
+        <img src="brooch.jpg" alt="Lights">
+        <div class="content-text">
+          <h3>Once Upon a Time</h3>
+          <p>Inspired by Tangled, this brooch design tells the story of self-discovery, resilience, and light. The sun motif, central to Rapunzel’s story, symbolizes destiny and hidden truths. Just as Rapunzel uncovers her past and embraces her strength, this piece is of a fully realized sun reflecting growth, realization, and freedom. This piece is made of brass and sterling silver. The layering, chasing, and finishing all add to the contrast and depth of the design. The initial flowing shapes of the brass pieces, resembling Rapunzel’s golden hair, backed up by the radiant sun, emphasizing the connection between her identity and her royal lineage. The choice of materials and textures, like the mid polished portrait of Rapunzel, and the detailed diamond burr finishing, enhances the power of the drop of sunlight that resides within Rapunzel and how the sun shines bright even with the princess shining brightly. This brooch tells a story not only about a princess, but of anyone seeking their own path. It embodies the idea that, like Rapunzel, we each hold an inner light waiting to shine.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="content">
+        <img src="ring.jpg" alt="Nature">
+        <div class="content-text">
+          <h3>Moonlight Garden</h3>
+          <p>For this project, I wanted it to be a “moonlit/night garden” themed jewellery piece. Making a nature themed jewellery piece is knowing that living things are delicate, and being able to make them sturdy and strong through jewellery making is such a beautiful form of art. Instead of a garden that comes alive in the sunlight, one that flourishes in the moonlight serves a calm and elegant vibe. This allows me to make the piece with many different motifs to explain the piece and slightly about what I like. To make it obvious that it corelated to “night” and “garden”, the moon, flowers, and butterflies are made and put together using wax sheets (perfect for small detail work that still need some kind of support). Chinese astral patterns were also added as a hint about my heritage, as well as to serve as the framework for the piece, being the connector of all living things.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+ 
+</div>
+<!-- end of remix -->
+<h3>Kirby◝(ᵔᗜᵔ)◜</h3>
+<p>Click to pause/play</p>
+    <script src="sketch.js"></script>
+
+</body>
+</html>
